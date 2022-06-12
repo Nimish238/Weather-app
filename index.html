@@ -55,7 +55,6 @@
     <h3 id="weather"></h3>
     <p id="date"> </p>
     <h2 id="temp" ></h2>
-    <span id="tempmin" ></span><span id="tempmax"></span>
   </div>
 <script>
 $(document).ready(function(){
@@ -100,10 +99,7 @@ $(document).ready(function(){
     document.getElementById('cityname').innerHTML=x.name+","+x.sys.country;
      var d=a-273.15;
     document.getElementById('temp').innerHTML=d.toFixed(2)+'&#176;C';
-    var e=b-273;
-    document.getElementById('tempmin').innerHTML="Min"+"&nbsp;"+e.toFixed(2)+'&#176;C'+"&nbsp;"+'&#8739'+"&nbsp;";
-    var f=c-273.15;
-    document.getElementById('tempmax').innerHTML="&nbsp;"+"Max"+"&nbsp;"+f.toFixed(2)+'&#176;C';
+    
     
    }
     }
